@@ -1,0 +1,15 @@
+<template name="home">
+<div class="row">
+	{{#each data}}
+		<div class="col-sm-6 col-md-3">
+		<div class="thumbnail">
+		  <div class="caption">
+		    <h3 class="title">{{ title }}</h3>
+		    <p class="desc">{{ desc }}</p>
+		    {{ genre }}
+		  </div>
+		</div>
+		</div>
+	{{/each}}
+</div>
+</template>
