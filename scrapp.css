@@ -1,12 +1,14 @@
 body { 
 	background-color: #191919;
+  padding-bottom: 70px;
 }
 body > .container {
     padding: 60px 15px 0;
 }
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     height: 60px;
     background-color: #222222;
@@ -18,6 +20,7 @@ body > .container {
     color: #777;
 }
 .title {
+  margin: 5px 0;
    overflow: hidden;
    text-overflow: ellipsis;
    display: -webkit-box;
@@ -34,4 +37,41 @@ body > .container {
    max-height: normal; 
    -webkit-line-clamp: 2;
    -webkit-box-orient: vertical;
+}
+
+.thumbnail{
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.428571429;
+    border: 0px solid #ddd;
+    border-radius: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background: #000000;
+}
+.thumbnail .caption {
+    padding: 10px;
+    color: #e2e2e2;
+    background: #000000;
+}
+.title-cover {
+  position: fixed;
+  max-width: 100%;
+  width: auto;
+  height: 520px;
+}
+.fixed-title {
+  position: fixed;
+}
+.media {
+  padding: 10px;
+  background-color: rgba(0,0,0,.9);
+  margin-bottom: -14px;
+}
+.media:nth-child(2n) {
+  background-color: rgba(0,0,0,.3);
+}
+.item:nth-child(4n+5){
+  clear: both;
 }

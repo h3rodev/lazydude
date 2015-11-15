@@ -1,0 +1,29 @@
+<template name="title">
+	<div class="row">
+		<div class="col-lg-4">
+			<img src="{{ thumb }}" alt="{{ title }}" class="title-cover">
+		</div>
+		
+		<div class="col-lg-8">
+			<div class="row">
+				<ul class="media-list">
+				{{#each videos }}
+				
+				  <li class="media">
+				    <div class="media-left pull-left">
+				    	<a id="{{ title }}_s{{season}}_e{{ epnum }}" href="#" class="showvideo">
+				        	<img class="media-object" src="{{ thumb }}" alt="{{ name }}" width="64px">
+				        </a>
+				    </div>
+				    <div class="media-body">
+				      <h4 class="media-heading">{{ name }} <span class="pull-right"><small><em>Season {{ season }}, Episode {{ epnum }}</em></small></span></h4>
+				      {{ desc }}<br><small class="pull-right"><em>{{ year }}</em></small>
+				    </div>
+				  </li>
+				
+				{{/each}}
+				</ul>
+			</div>
+		</div>
+	</div>
+</template>
